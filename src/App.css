@@ -1,0 +1,67 @@
+/* App.css */
+
+/* Reset and global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #22223b;
+  min-height: 100vh;
+}
+
+/* Container for main content */
+.container {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(25, 42, 86, 0.08);
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .container {
+    padding: 12px;
+    margin: 16px 4px 0 4px;
+    border-radius: 8px;
+  }
+}
+
+/* Navbar (optional, if not styled in separate Navbar.css) */
+nav, .navbar {
+  background: #22223b;
+  color: #fff;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+nav a,
+.navbar a {
+  color: #f2e9e4;
+  text-decoration: none;
+  margin-right: 24px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+.navbar a:hover {
+  color: #c9ada7;
+}
+
+.active-link {
+  border-bottom: 2px solid #9a8c98;
+  color: #9a8c98;
+}
+
+/* NotFound Page */
+.not-found {
+  padding: 48px 0 24px 0;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #c62828;
+  font-weight: 600;
+}
